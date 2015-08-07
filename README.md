@@ -35,7 +35,7 @@ Based on [these questions](https://github。com/h5bp/Front-end-Developer-Intervi
   - [哪些data-的属性是有效的](#%E5%93%AA%E4%BA%9Bdata-%E7%9A%84%E5%B1%9E%E6%80%A7%E6%98%AF%E6%9C%89%E6%95%88%E7%9A%84)
   - [HTML5作为一个开放的 Web 平台，HTML5的构建块是什么](#html5%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E5%BC%80%E6%94%BE%E7%9A%84-web-%E5%B9%B3%E5%8F%B0%EF%BC%8Chtml5%E7%9A%84%E6%9E%84%E5%BB%BA%E5%9D%97%E6%98%AF%E4%BB%80%E4%B9%88)
   - [描述下 `cookie` `sessionStorage` `localStorage` 的区别](#%E6%8F%8F%E8%BF%B0%E4%B8%8B-cookie-sessionstorage-localstorage-%E7%9A%84%E5%8C%BA%E5%88%AB)
-  - [描述下<script> <script async> <script defer>的区别](#%E6%8F%8F%E8%BF%B0%E4%B8%8Bscript-script-async-script-defer%E7%9A%84%E5%8C%BA%E5%88%AB)
+  - [描述下 `<script>` `<script async>` `<script defer>`的区别](#%E6%8F%8F%E8%BF%B0%E4%B8%8B-script-script-async-script-defer%E7%9A%84%E5%8C%BA%E5%88%AB)
   - [为什么一般总是把 CSS link 放置于<head></head>，而把script放在</body>前? 有什么例外么](#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E8%88%AC%E6%80%BB%E6%98%AF%E6%8A%8A-css-link-%E6%94%BE%E7%BD%AE%E4%BA%8Eheadhead%EF%BC%8C%E8%80%8C%E6%8A%8Ascript%E6%94%BE%E5%9C%A8body%E5%89%8D-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BE%8B%E5%A4%96%E4%B9%88)
   - [什么是渐进渲染](#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B8%90%E8%BF%9B%E6%B8%B2%E6%9F%93)
   - [你之前使用过什么不同的 HTML 模板语言么](#%E4%BD%A0%E4%B9%8B%E5%89%8D%E4%BD%BF%E7%94%A8%E8%BF%87%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%E7%9A%84-html-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80%E4%B9%88)
@@ -154,11 +154,11 @@ XHTML 是较规范的 HTML, 比如大小写有区别
 
 老生常谈了都
 
-### 描述下<script> <script async> <script defer>的区别
+### 描述下 `<script>` `<script async>` `<script defer>`的区别
 
 想死的心都有了
 
-### 为什么一般总是把 CSS link 放置于<head></head>，而把script放在</body>前? 有什么例外么
+### 为什么一般总是把 CSS link 放置于 `<head></head>`，而把script放在 `</body>` 前? 有什么例外么
 
 你猜
 
