@@ -25,6 +25,20 @@ Based on [these questions](https://github。com/h5bp/Front-end-Developer-Intervi
   - [解释ARIA和screenreaders, 怎么让一个网站可理解](#%E8%A7%A3%E9%87%8Aaria%E5%92%8Cscreenreaders-%E6%80%8E%E4%B9%88%E8%AE%A9%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%8F%AF%E7%90%86%E8%A7%A3)
   - [说下相比于JavaScript动画实现, CSS的动画实现有什么优点和缺点](#%E8%AF%B4%E4%B8%8B%E7%9B%B8%E6%AF%94%E4%BA%8Ejavascript%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0-css%E7%9A%84%E5%8A%A8%E7%94%BB%E5%AE%9E%E7%8E%B0%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%82%B9%E5%92%8C%E7%BC%BA%E7%82%B9)
   - [CORS是什么它解决什么问题](#cors%E6%98%AF%E4%BB%80%E4%B9%88%E5%AE%83%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98)
+- [HTML 问题](#html-%E9%97%AE%E9%A2%98)
+  - [doctype 的作用](#doctype-%E7%9A%84%E4%BD%9C%E7%94%A8)
+  - [标准模式和兼容(混杂)模式的差异](#%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%85%BC%E5%AE%B9%E6%B7%B7%E6%9D%82%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%B7%AE%E5%BC%82)
+  - [HTML 和 XHTML 的差异](#html-%E5%92%8C-xhtml-%E7%9A%84%E5%B7%AE%E5%BC%82)
+  - [像 application/xhtml+xml 这样的服务页面会有什么问题么](#%E5%83%8F-applicationxhtmlxml-%E8%BF%99%E6%A0%B7%E7%9A%84%E6%9C%8D%E5%8A%A1%E9%A1%B5%E9%9D%A2%E4%BC%9A%E6%9C%89%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E4%B9%88)
+  - [你怎么实现一个页面的多种语言(切换)](#%E4%BD%A0%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%A4%9A%E7%A7%8D%E8%AF%AD%E8%A8%80%E5%88%87%E6%8D%A2)
+  - [哪些方面的东西是你在设计和开发多语言网站时必须要小心谨慎考虑到的](#%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%98%AF%E4%BD%A0%E5%9C%A8%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%BC%80%E5%8F%91%E5%A4%9A%E8%AF%AD%E8%A8%80%E7%BD%91%E7%AB%99%E6%97%B6%E5%BF%85%E9%A1%BB%E8%A6%81%E5%B0%8F%E5%BF%83%E8%B0%A8%E6%85%8E%E8%80%83%E8%99%91%E5%88%B0%E7%9A%84)
+  - [哪些data-的属性是有效的](#%E5%93%AA%E4%BA%9Bdata-%E7%9A%84%E5%B1%9E%E6%80%A7%E6%98%AF%E6%9C%89%E6%95%88%E7%9A%84)
+  - [HTML5作为一个开放的 Web 平台，HTML5的构建块是什么](#html5%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E5%BC%80%E6%94%BE%E7%9A%84-web-%E5%B9%B3%E5%8F%B0%EF%BC%8Chtml5%E7%9A%84%E6%9E%84%E5%BB%BA%E5%9D%97%E6%98%AF%E4%BB%80%E4%B9%88)
+  - [描述下 `cookie` `sessionStorage` `localStorage` 的区别](#%E6%8F%8F%E8%BF%B0%E4%B8%8B-cookie-sessionstorage-localstorage-%E7%9A%84%E5%8C%BA%E5%88%AB)
+  - [描述下<script> <script async> <script defer>的区别](#%E6%8F%8F%E8%BF%B0%E4%B8%8Bscript-script-async-script-defer%E7%9A%84%E5%8C%BA%E5%88%AB)
+  - [为什么一般总是把 CSS link 放置于<head></head>，而把script放在</body>前? 有什么例外么](#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E8%88%AC%E6%80%BB%E6%98%AF%E6%8A%8A-css-link-%E6%94%BE%E7%BD%AE%E4%BA%8Eheadhead%EF%BC%8C%E8%80%8C%E6%8A%8Ascript%E6%94%BE%E5%9C%A8body%E5%89%8D-%E6%9C%89%E4%BB%80%E4%B9%88%E4%BE%8B%E5%A4%96%E4%B9%88)
+  - [什么是渐进渲染](#%E4%BB%80%E4%B9%88%E6%98%AF%E6%B8%90%E8%BF%9B%E6%B8%B2%E6%9F%93)
+  - [你之前使用过什么不同的 HTML 模板语言么](#%E4%BD%A0%E4%B9%8B%E5%89%8D%E4%BD%BF%E7%94%A8%E8%BF%87%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%E7%9A%84-html-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80%E4%B9%88)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -102,3 +116,56 @@ React + React Native
 
 跨域资源共享。解决了跨域请求的安全问题。
 
+## HTML 问题
+
+### doctype 的作用
+
+告诉浏览器当前使用的 HTML 版本，避免浏览器出现怪异的渲染效果。
+
+### 标准模式和兼容(混杂)模式的差异
+
+当然是越标准 IE 的行为就会越接近标准规范
+
+### HTML 和 XHTML 的差异
+
+XHTML 是较规范的 HTML, 比如大小写有区别
+
+### 像 application/xhtml+xml 这样的服务页面会有什么问题么
+
+不知道诶
+
+### 你怎么实现一个页面的多种语言(切换)
+
+各个语言包，前端切换
+
+### 哪些方面的东西是你在设计和开发多语言网站时必须要小心谨慎考虑到的
+
+没有吧
+
+### 哪些data-的属性是有效的
+
+难道不是随便叫什么?
+
+### HTML5作为一个开放的 Web 平台，HTML5的构建块是什么
+
+我也想问什么是“构建块”
+
+### 描述下 `cookie` `sessionStorage` `localStorage` 的区别
+
+老生常谈了都
+
+### 描述下<script> <script async> <script defer>的区别
+
+想死的心都有了
+
+### 为什么一般总是把 CSS link 放置于<head></head>，而把script放在</body>前? 有什么例外么
+
+你猜
+
+### 什么是渐进渲染
+
+我不知道
+
+### 你之前使用过什么不同的 HTML 模板语言么
+
+什么是 HTML 模板语言？
